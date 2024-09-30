@@ -1,0 +1,53 @@
+[versions]
+agp = "8.5.2"
+hiltAndroidVersion = "2.48.1"
+kotlin = "1.9.24"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+jetbrainsKotlin = "2.1.0-Beta1"
+hiltAndroid = "2.48.1"
+activityKtx = "1.9.2"
+fragmentKtx = "1.8.3"
+retrofit = "2.9.0"
+okhttp3 = "5.0.0-alpha.3"
+glide = "4.14.2"
+kotlinKapt = "2.1.0-Beta1"
+comGoogleDevtoolsKspGradlePlugin = "2.1.0-Beta1-1.0.25"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+hilt-android-v2461 = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" }
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+retrofit2-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-jetbrains-kotlin-kapt = {id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinKapt"}
+google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid"}
+jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin"}
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "comGoogleDevtoolsKspGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "agp"}
+
+
